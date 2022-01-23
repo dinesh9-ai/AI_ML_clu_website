@@ -1,6 +1,6 @@
 
 from flask import Flask, render_template,request,redirect,url_for,flash,send_from_directory
-from PIL import Image, ImageFont, ImageDraw 
+
 import os
 
 # app = Flask(__name__) # to make the app run without any
