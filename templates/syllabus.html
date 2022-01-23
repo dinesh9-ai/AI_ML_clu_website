@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/logo.jpeg">
+    <link href="{{ url_for('static',filename='styles/stylesheet.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+            
+        <div class="top">
+                <ul class="nav-menu">
+                <li> <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('register') }}">Register</a>
+                <a href="{{ url_for('tasks') }}">Tasks</a>
+                <a href="{{ url_for('events') }}">Events</a>
+                <a href="{{ url_for('faq') }}">FAQ</a>
+                <a href="{{ url_for('pyt') }}">Certificate</a>
+            </li>
+            </ul>
+            </div>
+        </header>
+    <div class='con'>
+        <table>
+            <tr>
+                <th>Task Number</th>
+            <th>Task</th>
+         </tr>
+         <tr>
+             <th>TASK-0</th>
+             <th>Get Familiarity with Python</th>
+         </tr>
+         <tr>
+            <th>TASK-1</th>
+            <th>Get Familiarity with Matplotlib, Numpy</th>
+        </tr>
+        <tr>
+            <th>TASK-2</th>
+            <th>Get Familiarity with Seaborn, Pandas</th>
+        </tr>
+        <tr>
+            <th>TASK-3</th>
+            <th>Get Familiarity with Tensorflow</th>
+        </tr>
+        <tr>
+            <th>TASK-4</th>
+            <th>Build your first machine learning model</th>
+        </tr>
+        <tr>
+            <th>TASK-5</th>
+            <th>Understanding Neural Networks</th>
+        </tr>
+        <tr>
+            <th>TASK-6</th>
+            <th>Explore iris, cifar-10, Fashion MNIST datasets</th>
+        </tr>
+        </table>
+        
+    </div>
+
+</body>
+</html>
