@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Certificates</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/x-icon" href="/static/images/logo.jpeg">
+    <link rel='stylesheet' type='text/css' media='screen' href="{{ url_for('static',filename='styles/stylesheet.css') }}">
+</head>
+<body>
+    <div class="top">
+                <ul class="nav-menu">
+                <li> <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('register') }}">Register</a>
+                <a href="{{ url_for('tasks') }}">Tasks</a>
+                <a href="{{ url_for('events') }}">Events</a>
+                <a href="{{ url_for('faq') }}">FAQ</a>
+                <a href="{{ url_for('pyt') }}">Certificate</a>
+            </li>
+            </ul>
+            </div>
+    <h1 style="text-align: center; color: white;">Enter your Roll Number</h1>
+    <form action="http://localhost:5000/pyt" method="post">
+    <input type="text" name="nm" id="content" style="margin-left: 40%;" />
+    <input type="submit" name="generate" style="margin-left: 44.5%;"/> </form>
+    {% if name %}
+        <div>
+            <a href="{{ url_for('pyt', filename=user) }}" download="myimage">
+                <img src="{{ url_for('pyt', filename=user) }}" /></a>
+
+            
+        </div>
+    {% endif %}
+</body>
+</html>

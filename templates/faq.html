@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/logo.jpeg">
+    <link href="{{ url_for('static',filename='styles/stylesheet.css') }}" rel="stylesheet" type="text/css">
+
+</head>
+
+   
+
+<body>
+    
+    <header>
+            
+        <div class="top">
+                <ul class="nav-menu">
+                <li> <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('register') }}">Register</a>
+                <a href="{{ url_for('tasks') }}">Tasks</a>
+                <a href="{{ url_for('events') }}">Events</a>
+                <a href="{{ url_for('faq') }}">FAQ</a>
+                <a href="{{ url_for('pyt') }}">Certificate</a>
+            </li>
+            </ul>
+            </div>
+
+        <main>
+            <h1 class="faq-heading" style="color: white;">FAQ'S</h1>
+            <section class="faq-container">
+                <div class="faq-one">
+    
+                    <h1 class="faq-page">How can you contact Co-ordinators?</h1>
+                   
+                    <div class="faq-body">
+                        <p>Send a mail to this mail id- aimlcmritonline@gmail.com</p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-two">
+                    <h1 class="faq-page">How can you join the WhatsApp group?</h1>
+                    <div class="faq-body">
+                        <p>Once you fill the form you will get an invitation link. Incase if you miss that feel free to contact the Co-ordinators</p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-three">
+
+    <h1 class="faq-page">What do you learn?</h1>
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>Here in this club you will be learning Python, Machine Learning. You can find more in the Tasks page.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+</body>
+</html>
