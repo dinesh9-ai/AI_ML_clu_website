@@ -14,7 +14,7 @@ def index():
 @app.route('/success/<name>')
 def success(name):
     if name=='not':
-        return 'enter correct Roll number or In case if you participated and still not getting certificate contact the coordinators'
+        return 'enter the correct Roll number or In case if you participated and still not getting certificate contact the coordinators'
 
 
 
