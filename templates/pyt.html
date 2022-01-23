@@ -26,8 +26,8 @@
     <input type="submit" name="generate" style="margin-left: 44.5%;"/> </form>
     {% if name %}
         <div>
-            <a href="{{ url_for('pyt', filename=user) }}" download="myimage">
-                <img src="{{ url_for('pyt', filename=user) }}" /></a>
+            <a href="{{ url_for('static', filename=user) }}" download="myimage">
+                <img src="{{ url_for('static', filename=user) }}" /></a>
 
             
         </div>
