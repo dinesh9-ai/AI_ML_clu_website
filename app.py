@@ -26,7 +26,7 @@ def pyt():
             user='not'
             return redirect(url_for('success', name = user))
         user=user+'.pdf'
-        if user not in os.listdir('./static/styles/im'):
+        if user not in os.listdir('static/styles/im'):
             user='not'
             return redirect(url_for('success', name = user))
         else:
