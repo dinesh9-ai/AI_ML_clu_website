@@ -30,7 +30,7 @@ def pyt():
             user='not'
             return redirect(url_for('success', name = user))
         else:
-            render_template('pyt.html',data=user)
+            render_template('pyt.html',result=user)
     else:
         return render_template('pyt.html')
 
