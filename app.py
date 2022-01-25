@@ -30,7 +30,7 @@ def pyt():
             user='not'
             return redirect(url_for('success', name = user))
         else:
-            return send_from_directory(directory='/static/styles/im',as_attachment=True, filename=user) 
+            render_template('pyt.html',data=user)
     else:
         return render_template('pyt.html')
 
