@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'aimlclub'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7A7C9A7CA317408CA25C997A87708891 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FCAF814D2D6849BCB1C1F99563D5B783 }}
