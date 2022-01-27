@@ -26,11 +26,11 @@ def pyt():
             user='not'
             return redirect(url_for('success', name = user))
         user=user+'.pdf'
-        if user not in os.listdir('static/styles/im'):
+        if user not in os.listdir('static/im'):
             user='not'
             return redirect(url_for('success', name = user))
         else:
-            render_template('pyt.html',result=user)
+            return render_template('pyt.html',result='/im/'+user)
     else:
         return render_template('pyt.html')
 
